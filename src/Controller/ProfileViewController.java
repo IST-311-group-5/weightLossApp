@@ -24,7 +24,7 @@ import javafx.stage.Stage;
  */
 public class ProfileViewController implements Initializable {
 
-  @FXML
+    @FXML
     private ResourceBundle resources;
 
     @FXML
@@ -38,13 +38,13 @@ public class ProfileViewController implements Initializable {
 
     @FXML
     void createLog(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DetailedModelView.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/CreateLogView.fxml"));
 
         Parent detailedModelView = loader.load();
 
         Scene tableViewScene = new Scene(detailedModelView);
 
-        DetailedModelViewController detailedControlled = loader.getController();
+        CreateLogViewController newLogController = loader.getController();
 
         Stage stage = new Stage();
         stage.setScene(tableViewScene);
@@ -62,6 +62,6 @@ public class ProfileViewController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
 }

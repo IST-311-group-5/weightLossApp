@@ -17,12 +17,29 @@ import javafx.scene.control.Button;
  *
  * @author liamb
  */
-public class LogViewController implements Initializable {
+public class CreateLogViewController implements Initializable {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
 
     @FXML
     private Button saveLogButton;
+
     @FXML
     private Button cancelLogButton;
+
+    @FXML
+    void cancelLog(ActionEvent event) {
+
+    }
+
+    @FXML
+    void saveLog(ActionEvent event) {
+
+    }
 
     /**
      * Initializes the controller class.
@@ -30,14 +47,5 @@ public class LogViewController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-
-    @FXML
-    private void saveLog(ActionEvent event) {
     }
-
-    @FXML
-    private void cancelLog(ActionEvent event) {
-    }
-    
 }
