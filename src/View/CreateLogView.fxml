@@ -14,12 +14,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="948.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateLogViewController">
    <children>
-      <TextField layoutX="164.0" layoutY="193.0" prefHeight="44.0" prefWidth="342.0" promptText="Log Entry Number">
+      <TextField fx:id="logNumberField" layoutX="164.0" layoutY="193.0" prefHeight="44.0" prefWidth="342.0" promptText="Log Entry Number">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField layoutX="164.0" layoutY="258.0" prefHeight="44.0" prefWidth="342.0" promptText="xx/xx/xxxx">
+      <TextField fx:id="logDateField" layoutX="164.0" layoutY="258.0" prefHeight="44.0" prefWidth="342.0" promptText="xx/xx/xxxx">
          <font>
             <Font size="20.0" />
          </font>
@@ -130,7 +130,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <TextArea layoutX="164.0" layoutY="332.0" prefHeight="200.0" prefWidth="342.0" promptText="Log Entry Content">
+      <TextArea fx:id="logContentField" layoutX="164.0" layoutY="332.0" prefHeight="200.0" prefWidth="342.0" promptText="Log Entry Content">
          <font>
             <Font size="20.0" />
          </font>

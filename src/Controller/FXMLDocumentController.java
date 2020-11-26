@@ -36,7 +36,7 @@ import javax.persistence.Query;
 
 public class FXMLDocumentController implements Initializable {
 
-    // Database manager
+    //Database manager
     EntityManager manager;
 
     @FXML

@@ -20,29 +20,31 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author liamb
  */
 @Entity
-@Table(name = "LOGSMODEL")
+@Table(name = "LOGMODEL")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Logsmodel.findAll", query = "SELECT l FROM Logsmodel l")
-    , @NamedQuery(name = "Logsmodel.findById", query = "SELECT l FROM Logsmodel l WHERE l.id = :id")
-    , @NamedQuery(name = "Logsmodel.findByDate", query = "SELECT l FROM Logsmodel l WHERE l.date = :date")
-    , @NamedQuery(name = "Logsmodel.findByLogcontentmodel", query = "SELECT l FROM Logsmodel l WHERE l.logcontentmodel = :logcontentmodel")})
-public class Logsmodel implements Serializable {
+    @NamedQuery(name = "Logmodel.findAll", query = "SELECT l FROM Logmodel l")
+    , @NamedQuery(name = "Logmodel.findById", query = "SELECT l FROM Logmodel l WHERE l.id = :id")
+    , @NamedQuery(name = "Logmodel.findByDate", query = "SELECT l FROM Logmodel l WHERE l.date = :date")
+    , @NamedQuery(name = "Logmodel.findByContent", query = "SELECT l FROM Logmodel l WHERE l.content = :content")})
+
+public class Logmodel implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
     @Id
     @Basic(optional = false)
     @Column(name = "ID")
     private Integer id;
     @Column(name = "DATE")
     private String date;
-    @Column(name = "LOGCONTENTMODEL")
-    private String logcontentmodel;
+    @Column(name = "CONTENT")
+    private String content;
 
-    public Logsmodel() {
+    public Logmodel() {
     }
 
-    public Logsmodel(Integer id) {
+    public Logmodel(Integer id) {
         this.id = id;
     }
 
@@ -62,12 +64,12 @@ public class Logsmodel implements Serializable {
         this.date = date;
     }
 
-    public String getLogcontentmodel() {
-        return logcontentmodel;
+    public String getContent() {
+        return content;
     }
 
-    public void setLogcontentmodel(String logcontentmodel) {
-        this.logcontentmodel = logcontentmodel;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     @Override
@@ -80,10 +82,10 @@ public class Logsmodel implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Logsmodel)) {
+        if (!(object instanceof Logmodel)) {
             return false;
         }
-        Logsmodel other = (Logsmodel) object;
+        Logmodel other = (Logmodel) object;
         if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
             return false;
         }
@@ -92,7 +94,7 @@ public class Logsmodel implements Serializable {
 
     @Override
     public String toString() {
-        return "Model.Logsmodel[ id=" + id + " ]";
+        return "Model.Logmodel[ id=" + id + " ]";
     }
-    
+
 }

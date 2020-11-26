@@ -11,7 +11,7 @@
     <class>Model.Userprogressmodel</class>
     <class>Model.Collectionofgoalsmodel</class>
     <class>Model.Goalmodel</class>
-    <class>Model.Logsmodel</class>
+    <class>Model.Logmodel</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/gp5_db;create=true"/>
       <property name="javax.persistence.jdbc.user" value="APP"/>
