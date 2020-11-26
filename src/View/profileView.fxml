@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField editable="false" layoutX="14.0" layoutY="81.0" prefHeight="44.0" prefWidth="240.0" text="Name:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="14.0" layoutY="125.0" prefHeight="27.0" prefWidth="240.0" text="Height:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="14.0" layoutY="165.0" prefHeight="45.0" prefWidth="240.0" text="Weight:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Text layoutX="32.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fitness Level" wrappingWidth="160.55078125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TitledPane animated="false" layoutX="260.0" layoutY="-114.0" text="untitled" />
+      <ScrollPane layoutX="304.0" layoutY="72.0" prefHeight="186.0" prefWidth="398.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="187.0" prefWidth="376.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-----------I am a log-----------">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-----------I am a log-----------">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-----------I am a log-----------">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-----------I am a log-----------">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Text layoutX="303.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Collection of Logs">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="304.0" layoutY="303.0" prefHeight="195.0" prefWidth="398.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="376.0">
+               <children>
+                  <Text layoutX="17.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-----------I am a goal -----------">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="17.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-----------I am a goal -----------">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="17.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-----------I am a goal -----------">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="17.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-----------I am a goal -----------">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Text layoutX="301.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Collection of Goals">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Slider layoutX="35.0" layoutY="415.0" majorTickUnit="1.0" max="7.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" />
+      <Text layoutX="25.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How many times do you work out in a week?" textAlignment="CENTER" wrappingWidth="160.55078125" />
+      <TextField editable="false" layoutX="14.0" layoutY="210.0" prefHeight="45.0" prefWidth="240.0" text="Age:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="14.0" layoutY="248.0" prefHeight="45.0" prefWidth="240.0" text="BMI:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField editable="false" layoutX="14.0" layoutY="293.0" prefHeight="45.0" prefWidth="240.0" text="BMI Status:  ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <BottomNavigationButton layoutX="495.0" layoutY="3.0" text="Log">
+         <graphic>
+            <Icon content="FAVORITE" />
+         </graphic>
+      </BottomNavigationButton>
+      <BottomNavigationButton layoutX="364.0" layoutY="3.0" selected="true" text="Profile">
+         <graphic>
+            <Icon content="RECENT_ACTORS" />
+         </graphic>
+      </BottomNavigationButton>
+      <BottomNavigationButton layoutX="434.0" layoutY="3.0" text="Goal">
+         <graphic>
+            <Icon content="NEAR_ME" />
+         </graphic>
+      </BottomNavigationButton>
+      <BottomNavigationButton layoutX="551.0" layoutY="3.0" text="Workout">
+         <graphic>
+            <Icon content="FAVORITE" />
+         </graphic>
+      </BottomNavigationButton>
+      <BottomNavigationButton layoutX="633.0" layoutY="3.0" text="Calendar">
+         <graphic>
+            <Icon content="FAVORITE" />
+         </graphic>
+      </BottomNavigationButton>
+   </children>
+</AnchorPane>
