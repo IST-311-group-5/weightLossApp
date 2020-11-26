@@ -15,7 +15,7 @@ public class WeightLossApp extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/View/FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/ProfileView.fxml"));
         
         Scene scene = new Scene(root);
         
