@@ -21,7 +21,7 @@ import javax.persistence.Persistence;
 /**
  * FXML Controller class
  *
- * empty commit
+ * @author liamb
  */
 public class CreateLogViewController implements Initializable {
 
